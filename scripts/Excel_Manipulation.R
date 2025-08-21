@@ -59,3 +59,4 @@ counts1 = count_contingency_tables("Methodology Type", file_path, "BreastCancerV
 counts2 = count_contingency_tables("Methodology Type", file_path, "BreastCancerVis", file_path2, "Malignant vs Normal")
 print(counts1)
 print(counts2)
+print("*")
