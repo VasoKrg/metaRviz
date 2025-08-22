@@ -1,8 +1,8 @@
 import pandas as pd, numpy as np, re
 
 # ==== CONFIG ====
-SRC = "C://Users//vaso0//Desktop//Meta_Analysis_Tables//MOCK_MAIN_TABLE.csv"   # your main table CSV
-DEST = "C://Users//vaso0//Desktop//Meta_Analysis_Tables//Contingency_By_Classification.xlsx"
+SRC = "MOCK_MAIN_TABLE.csv"   # your main table CSV
+DEST = "Contingency_By_Classification.xlsx"
 
 SETS = ["Training", "Testing", "Overall"]
 
@@ -183,3 +183,4 @@ with pd.ExcelWriter(DEST, engine="openpyxl") as w:
         df_sheet.to_excel(w, sheet_name=sheet, index=False)
 
 print(f"Created {DEST}")
+
